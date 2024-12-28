@@ -1,0 +1,10 @@
+The issue is resolved by ensuring the parent container has a defined width. Adding the `w-full` class to the parent div solves the problem:
+
+```html
+<div class="flex items-center justify-between w-full">
+  <p>This text should be aligned to the left.</p>
+  <button>Click me</button>
+</div>
+```
+
+This ensures that the flex container utilizes the available width, allowing `justify-between` to distribute space correctly and align the button to the right edge.
