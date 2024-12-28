@@ -1,0 +1,10 @@
+The following Tailwind CSS classes are not applied correctly:
+
+```html
+<div class="flex items-center justify-between">
+  <p>This text should be aligned to the left.</p>
+  <button>Click me</button>
+</div>
+```
+
+The expected behavior is that the text and the button should be aligned to the left and right ends of their container respectively. However, the button is not properly aligned to the right.  Inspecting the browser's developer tools reveals that the `justify-between` class has no effect.
